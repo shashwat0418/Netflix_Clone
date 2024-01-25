@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: black;
+    }
+
+    .fixed-background {
+        width: auto;
+      background-image: url('backimagefinal.jpeg'); 
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      height: 90vh;
+      
+      color: #fff;
+    
+    }
+
+    
+    .heading{
+        display: flex;
+        justify-content: space-around;
+    }
+    .heading1{
+        width: auto;
+        height: auto;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .heading2{
+        width: auto;
+        height: auto;
+       
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       
+    }
+    .sign{
+        width: 80px;
+        height: 30px;
+        margin-left: 30px;
+        border-radius: 5px;
+        background-color: red;
+        border-color: red;
+        color: white; 
+      font-family: 'Arial', sans-serif;
+      font-size: 14px;
+    }
+    .bt1{
+        width: 120px;
+        height: 40px;
+        margin-left: 30px;
+        border-radius: 10px;
+        background-color: rgba(246, 239, 239, -0.10);
+        border-color: #757575;
+        border-width: 2px;
+        color:  white; 
+      font-family: 'Arial', sans-serif;
+      font-size: 14px;
+    }
+    .netflix{
+     color: red; 
+      
+    }
+    
+    .strip{
+        background-color: darkgreen;
+        height: 9px;
+    }
+    .middle{
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 25px;
+        margin-top: 200px;
+        
+    }
+
+    .middle2{
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 30px;
+    }
+    .middle3 
+    {
+       text-align: center;
+    }
+    .middle3 input{
+        height: 53px;
+        width: 350px;
+        border-radius: 5px;
+        border-color:  #757575;
+        
+        border-width: -20px;
+        background-color: rgba(246, 239, 239, -0.10);
+    }
+    .middle3 button{
+        height: 53px;
+        width: 200px;
+        border-radius: 5px;
+        border-color: red;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        color: white;
+        border-width: 2px;
+        background-color: red;
+}  
+    
+    .strip{
+        background-color: #141415;
+        height: 8px;
+        width: auto;
+    }
+    .box1{
+    
+        height: auto;
+    }
+    .box1_1{
+        width: auto;
+        height:auto;
+        display: flex;
+       justify-content: space-evenly;
+       align-items: center;
+    }
+    .b1{
+        width: auto;
+        height:auto;
+        
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .b12 h1 , .b12 p{
+        color: white; 
+      font-family: 'Arial', sans-serif;
+      font-size: 14px;
+    }
+    .b2{
+        width: auto;
+        height:auto;
+      
+        
+    }
+    .questions1{
+        height:auto;
+
+    }
+    .questions2{
+        height: auto;
+        width: auto;
+       
+    }
+    .bars{
+        
+        height: auto;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .e164gv2o2 {
+        list-style-type: none;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+       width: 80%;
+       background-color: rgb(45,45,45);
+       border-color: rgb(45,45,45);
+    }
+    
+    .e164gv2o1 {
+        margin-bottom: 10px;
+        
+    }
+    
+    .elj7tfr0 {
+        background-color: rgb(45,45,45);
+        color: #fff;
+        padding: 10px;
+        cursor: pointer;
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        text-align: left;
+    }
+    
+    .elj7tfr3 {
+        margin-left: 10px;
+    }
+    
+    .e164gv2o0 {
+        display: none;
+        padding: 10px;
+    }
+    .hell ,#hell{
+        font-size: 1.125rem;
+        color: whitesmoke;
+    }
+    
+    .e164gv2o2[aria-expanded="true"] .e164gv2o0 {
+        display: block;
+    }
+    .container{
+        width: 100%;
+        text-align: center;
+    }
+    .container ul{
+        margin-left: 14%;
+    }
+    .netflix_logo{
+        
+    margin-right: 10%;
+    width: 150px;
+    object-fit: contain;
+
+    }
+    .feature__image__container {
+            position: relative;
+            overflow: hidden;
+            width: 90%; 
+        }
+
+        .feature__image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .feature__backgroud__video__container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .feature__backgroud__video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+.download__gif__container {
+  width: 20%;
+  height: 100%;
+}
+.gif {
+  width: 100%;
+  height: 100%;
+}
+
+.feature__3__backgroud__video__container {
+  max-width: 63%;
+  max-height: 47%;
+  z-index: -2;
+  top: 9%;
+  left: 19%;
+}
+.b12 h1{
+    font-size: 40px;
+}
+ </style>
+</head>
+<body>
+
+  <div class="fixed-background">
+    <div class="heading">
+       <div class="heading1">
+        <div class="netflix"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjNk4qehCE8TFWGo-DGqYowvPNmX_BBBbsRA&amp;usqp=CAU" alt="nav_logo" class="netflix_logo"></div>
+       </div>
+        <div class=" heading2">
+            <select class="bt1" id="cars" name="cars">
+                <option value="volvo">English</option>
+                <option value="saab">Hindi</option>
+              </select>
+            <button class="sign">Sign In</button>
+        </div>
+    </div>
+        <div class="middle">
+            <h1>Unlimited movies, TV shows and more</h1>
+        </div> 
+        <div class="middle2">
+            <p>Watch anywhere. Cancel anytime.</p>
+        </div> 
+        <div class="middle2">
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+        </div> 
+        <div class="middle3">
+            <input style="color: white;" type="email address" placeholder="Email address">
+            <button>Get Started > </button>
+        </div> 
+  </div>
+  <div class="strip"></div>
+    <div class="box1">
+        <div class="box1_1">
+            <div class="b1">
+                <div class="b12">
+                    <h1>Enjoy on your TV</h1>
+                <p>Watch on smart TVs, PlayStation, Xbox, </p>
+                <p>Chromecast, Apple TV, Blu-ray players and more.</p> 
+                </div>
+            </div>
+            <div class="b2">
+                <div class="feature__image__container">
+                    <img
+                      src="tv.png"
+                      alt="Feature image"
+                      class="feature__image"
+                    />
+                    <div class="feature__backgroud__video__container">
+                      <video
+                        autoplay=""
+                        loop=""
+                        muted=""
+                        class="feature__backgroud__video"
+                      >
+                        <source
+                          src="video-tv-in-0819.m4v"
+                          type="video/mp4"
+                        />
+                      </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="strip"></div>
+    <div class="box1">
+        <div class="box1_1">
+            <div class="b2"><img alt="" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" data-uia="nmhp-card-animation-asset-image" class="default-ltr-cache-1d3w5wq"></div>
+            <div class="b1">
+                <div class="b12">
+                    <h1>Download your shows  <br>to watch offline</h1>
+                <p>Save your favourites easily and always have <br>something to watch. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="strip"></div>
+    <div class="box1">
+        <div class="box1_1">
+            <div class="b1">
+                <div class="b12">
+                    <h1>Enjoy on your TV</h1>
+                <p>Watch on smart TVs, PlayStation, Xbox, </p>
+                <p>Chromecast, Apple TV, Blu-ray players and more.</p> 
+                </div>
+            </div>
+            <div class="b2">
+                <div class="feature">
+                   
+                    <div class="feature__image__container feature__3__image__container">
+                      <img
+                        src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png"
+                        alt="Feature image"
+                        class="feature__image feature__3__image"
+                      />
+                      <div
+                        class="
+                          feature__backgroud__video__container
+                          feature__3__backgroud__video__container
+                        "
+                      >
+                        <video
+                          autoplay=""
+                          loop=""
+                          muted=""
+                          class="feature__backgroud__video feature__3__backgroud__video"
+                        >
+                          <source
+                            src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v"
+                            type="video/mp4"
+                          />
+                        </video>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="strip"></div>
+    <div class="box1">
+        <div class="box1_1">
+            <div class="b2"><img alt="" src="https://occ-0-4409-3647.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d" data-uia="nmhp-card-animation-asset-image" class="default-ltr-cache-1d3w5wq"></div>
+            <div class="b1">
+                <div class="b12">
+                    <h1>Download your shows  <br>to watch offline</h1>
+                <p>Save your favourites easily and always have <br>something to watch. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="strip"></div>
+    <div class="questions1">
+        <div class="questions2">
+            <div class="questions3">
+                <p style="text-align: center; font-weight: bold; font-size: 60px; color: whitesmoke;">Frequently Asked Questions</p>
+            </div>
+            <div class="bars">
+                <div class="container">
+                    <ul id="nmhp-card-faq-accordion" data-uia="nmhp-card-faq-accordion" class="e164gv2o3 default-ltr-cache-1cftcxg eiehs6n0">
+                        <li class="e164gv2o2 default-ltr-cache-1vunuwp erpgvj60">
+                            <h3 content="[object Object]" class="e164gv2o1 default-ltr-cache-dfy0gt elj7tfr2">
+                                <button aria-expanded="false" aria-controls="content--nmhp-card-faq-accordion--0" id="button--nmhp-card-faq-accordion--0" data-uia="nmhp-card-faq-accordion+button-0" class="elj7tfr0 default-ltr-cache-gu5o20 e1ff4m3w2" type="button">
+                                    <span data-uia="nmhp-card-faq-accordion+what_is_netflix" class="hell">What is Netflix?</span>
+                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="elj7tfr3 e164gv2o4 default-ltr-cache-l7vm9h e1svuwfo1" data-name="Plus" alt="">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" fill="currentColor"></path>
+                                    </svg>
+                                </button>
+                            </h3>
+                            <div id="content--nmhp-card-faq-accordion--0" aria-labelledby="button--nmhp-card-faq-accordion--0" role="region" data-is-open="false" content="[object Object]" class="e164gv2o0 default-ltr-cache-lv6mot e16cpwz0">
+                                <span id="hell" data-uia="">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.<br><br>You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</span>
+                            </div>
+                        </li>
+                        <li class="e164gv2o2 default-ltr-cache-1vunuwp erpgvj60">
+                            <h3 content="[object Object]" class="e164gv2o1 default-ltr-cache-dfy0gt elj7tfr2">
+                                <button aria-expanded="false" aria-controls="content--nmhp-card-faq-accordion--0" id="button--nmhp-card-faq-accordion--0" data-uia="nmhp-card-faq-accordion+button-0" class="elj7tfr0 default-ltr-cache-gu5o20 e1ff4m3w2" type="button">
+                                    <span data-uia="nmhp-card-faq-accordion+what_is_netflix" class="hell">How much does Netflix cost?</span>
+                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="elj7tfr3 e164gv2o4 default-ltr-cache-l7vm9h e1svuwfo1" data-name="Plus" alt="">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" fill="currentColor"></path>
+                                    </svg>
+                                </button>
+                            </h3>
+                            <div id="content--nmhp-card-faq-accordion--0" aria-labelledby="button--nmhp-card-faq-accordion--0" role="region" data-is-open="false" content="[object Object]" class="e164gv2o0 default-ltr-cache-lv6mot e16cpwz0">
+                                <span id="hell" data-uia="">Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts.</span>
+                            </div>
+                        </li>
+                        <li class="e164gv2o2 default-ltr-cache-1vunuwp erpgvj60">
+                            <h3 content="[object Object]" class="e164gv2o1 default-ltr-cache-dfy0gt elj7tfr2">
+                                <button aria-expanded="false" aria-controls="content--nmhp-card-faq-accordion--0" id="button--nmhp-card-faq-accordion--0" data-uia="nmhp-card-faq-accordion+button-0" class="elj7tfr0 default-ltr-cache-gu5o20 e1ff4m3w2" type="button">
+                                    <span data-uia="nmhp-card-faq-accordion+what_is_netflix" class="hell">Where can I watch?</span>
+                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="elj7tfr3 e164gv2o4 default-ltr-cache-l7vm9h e1svuwfo1" data-name="Plus" alt="">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" fill="currentColor"></path>
+                                    </svg>
+                                </button>
+                            </h3>
+                            <div id="content--nmhp-card-faq-accordion--0" aria-labelledby="button--nmhp-card-faq-accordion--0" role="region" data-is-open="false" content="[object Object]" class="e164gv2o0 default-ltr-cache-lv6mot e16cpwz0">
+                                <span id="hell" data-uia="">Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+                    
+                                    You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</span>
+                            </div>
+                        </li>
+                    
+                        <li class="e164gv2o2 default-ltr-cache-1vunuwp erpgvj60">
+                            <h3 content="[object Object]" class="e164gv2o1 default-ltr-cache-dfy0gt elj7tfr2">
+                                <button aria-expanded="false" aria-controls="content--nmhp-card-faq-accordion--0" id="button--nmhp-card-faq-accordion--0" data-uia="nmhp-card-faq-accordion+button-0" class="elj7tfr0 default-ltr-cache-gu5o20 e1ff4m3w2" type="button">
+                                    <span data-uia="nmhp-card-faq-accordion+what_is_netflix" class="hell">How do I cancel?</span>
+                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="elj7tfr3 e164gv2o4 default-ltr-cache-l7vm9h e1svuwfo1" data-name="Plus" alt="">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" fill="currentColor"></path>
+                                    </svg>
+                                </button>
+                            </h3>
+                            <div id="content--nmhp-card-faq-accordion--0" aria-labelledby="button--nmhp-card-faq-accordion--0" role="region" data-is-open="false" content="[object Object]" class="e164gv2o0 default-ltr-cache-lv6mot e16cpwz0">
+                                <span id="hell" data-uia="">Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</span>
+                            </div>
+                        </li> 
+                        <li class="e164gv2o2 default-ltr-cache-1vunuwp erpgvj60">
+                            <h3 content="[object Object]" class="e164gv2o1 default-ltr-cache-dfy0gt elj7tfr2">
+                                <button aria-expanded="false" aria-controls="content--nmhp-card-faq-accordion--0" id="button--nmhp-card-faq-accordion--0" data-uia="nmhp-card-faq-accordion+button-0" class="elj7tfr0 default-ltr-cache-gu5o20 e1ff4m3w2" type="button">
+                                    <span data-uia="nmhp-card-faq-accordion+what_is_netflix" class="hell">What can I watch on Netflix?</span>
+                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="elj7tfr3 e164gv2o4 default-ltr-cache-l7vm9h e1svuwfo1" data-name="Plus" alt="">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" fill="currentColor"></path>
+                                    </svg>
+                                </button>
+                            </h3>
+                            <div id="content--nmhp-card-faq-accordion--0" aria-labelledby="button--nmhp-card-faq-accordion--0" role="region" data-is-open="false" content="[object Object]" class="e164gv2o0 default-ltr-cache-lv6mot e16cpwz0">
+                                <span id="hell" data-uia="">Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</span>
+                            </div>
+                        </li> 
+                        <li class="e164gv2o2 default-ltr-cache-1vunuwp erpgvj60">
+                            <h3 content="[object Object]" class="e164gv2o1 default-ltr-cache-dfy0gt elj7tfr2">
+                                <button aria-expanded="false" aria-controls="content--nmhp-card-faq-accordion--0" id="button--nmhp-card-faq-accordion--0" data-uia="nmhp-card-faq-accordion+button-0" class="elj7tfr0 default-ltr-cache-gu5o20 e1ff4m3w2" type="button">
+                                    <span data-uia="nmhp-card-faq-accordion+what_is_netflix" class="hell">Is Netflix good for kids?</span>
+                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="elj7tfr3 e164gv2o4 default-ltr-cache-l7vm9h e1svuwfo1" data-name="Plus" alt="">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" fill="currentColor"></path>
+                                    </svg>
+                                </button>
+                            </h3>
+                            <div id="content--nmhp-card-faq-accordion--0" aria-labelledby="button--nmhp-card-faq-accordion--0" role="region" data-is-open="false" content="[object Object]" class="e164gv2o0 default-ltr-cache-lv6mot e16cpwz0">
+                                <span id="hell" data-uia="">The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.
+                    
+                                    Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</span>
+                            </div>
+                        </li>  
+                    </ul>
+                </div>
+            </div>
+            <div style="text-align: center; width: 100%; font-size: 1.125rem; margin-top: 5%;">
+                <p style="color: white; font-size: large;">Ready to watch? Enter your email to create or restart your membership.</p>
+            </div>
+            <div class="email" style="margin-top: 2%;"><div class="middle3">
+                <input type="email address" placeholder="Email address">
+                <button>Get Started > </button>
+            </div> </div>
+            
+        </div>
+    </div>
+    <div style="margin-top: 10px;" class="strip"></div>
+    <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="https://www.linkedin.com/in/shashwat-mishra-63aa2b247/" class="nav-link px-2 text-body-secondary"><p style="color: #fff;">LinkedIn</p></a></li>
+            <li class="nav-item"><a href="https://twitter.com/Shashwa90475936" class="nav-link px-2 text-body-secondary"><p style="color: #fff;">Twitter</p></a></li>
+            <li class="nav-item"><a href="https://github.com/shashwat0418" class="nav-link px-2 text-body-secondary"><p style="color: #fff;">Instagram</p></a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><p style="color: #fff;">GitHub</p></a></li>
+            
+          </ul>
+          <div style="text-align: center; font-size: large; "><p><a style="text-decoration: none; color: #fff;" href="">Shashwat Mishra</a></p></div>
+        </footer>
+    <script> document.addEventListener('DOMContentLoaded', function () {
+        // Get all the FAQ items
+        var faqItems = document.querySelectorAll('.e164gv2o2');
+
+        // Attach click event listener to each FAQ item
+        faqItems.forEach(function (faqItem) {
+            var button = faqItem.querySelector('.elj7tfr0');
+            var content = faqItem.querySelector('.e164gv2o0');
+
+            // Toggle the content visibility on button click
+            button.addEventListener('click', function () {
+                var isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+                // Toggle the aria-expanded attribute
+                button.setAttribute('aria-expanded', !isExpanded);
+
+                // Toggle the content visibility
+                content.style.display = isExpanded ? 'none' : 'block';
+            });
+        });
+    });</script>
+</body>
+</html>
